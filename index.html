@@ -1,93 +1,445 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>My Page</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
-<body>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-<div class="jumbotron text-center " style="background-color: #ece8fe; margin-bottom:0 " >
-  <h1 style=font-family:alex-brush;>&#10024; Welcome to my page &#10024;</h1>
-  <p>Hope you got a lot of happiness&#x1F308;</p>
-</div>
+        <title> Cezkiy Personal Website </title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo"> Portfolio</a>
 
-<nav class="navbar navbar-expand-sm navbar-light " style="background-color: #e8fafe">
-    <a class="navbar-brand" href="#">My Assignment</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="assignment/05211942000005_1.html">Css 1</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="assignment/05211942000005_2.html">Css 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="assignment/05211942000005_3.html">Css 3</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="assignment/05211942000005_4.html">Css 4</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="assignment/05211942000005_5.html">Css 5</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="assignment/05211942000005.html">Bootstrap</a>
-        </li>         
-      </ul>
-    </div>  
-</nav>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i>Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i>About
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i>Skills
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i>Portfolio
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i>Contact Me
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close" ></i>
+                </div>
+                <div class="nav__btns">
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+            
+        </header>
 
-<div class="container" style="margin-top:30px">
-  <div class="row">
-    <div class="col-sm-4">
-      <h2>About Me</h2>
-      <h5>Photo of me:</h5>
-      <img src="image/my_photo.jpg" width="100%">
-      <p></p>
-      <p style="text-align:left">Hello everyone &#10024; my name is Cempaka Rahma Davi.I was born in Jakarta 10 December 2001. My family and my friend always call me ceces i dont know where the came from but you can call me anything that you want.Now, I study in Information System Department at Institut Teknologi Sepuluh Nopember [ITS] Surabaya.The dream i had when i was senior high school student was to be a doctor. But sometimes things dont go well like everthing we've planned &#128532;. Its oke i will responsible to the choice that i took. Thank You ❤</p>
-      <h5 style="color:#ff8b94;">We have to connected&#128584;</h5>
-      <ul class="nav nav-pills flex-column">
-        <li class="nav-item">
-          <a class="nav-link" href="www.instagram.com">Instagram</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="www.twitter.com">Twitter</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-      <hr class="d-sm-none">
-    </div>
-    <div class="col-sm-8">
-      <h2>First Short Trip to Malang</h2>
-      <h5>Nov 17, 2019</h5>
-      <img src="image/Foto_paralayang.JPG" width="100%">
-      <p></p>
-      <p style="text-align:justify;">Hello guys, i want to tell story about my first short trip in surabaya with my friends &#128518; When 17 November 2019 my department have an event called malam inagurasi.The event started from 5pm i guess untill 8 pm.After the event end,my friend and i initiate to go to malang to see the sunrise&#128571;. Spontaneously, we invite another friends to join our short trip to malang. We didn't expect that many friends would join our trip. There are 20 people that join the join our trip&#128557;&#128591;it is Pradnya Oji Kean Viko Belinda Hanip Agym Anug Fajrul Aqmal Ghina Acin Dalila Rekyan Adika Bariqi Rafli and also Devita.My destination was Bukit Paralayang in malang. Because the its a hill so the weather is so cold.Unfortunately,i dont bring my jacket but thanks god that my boyfriend borrow me his jacket.Its such a great memories for me because i never go on trip with my friend with that beautiful view.I hope we can do the another trip again &#128547; </p>
-      <br>
-      <h2>HUT SMANSA</h2>
-      <h5>August 26,2018</h5>
-      <img src="image/IMG_2071.jpg" width="100%">
-      <p></p>
-      <p style="text-align:justify;">So in this section,i want to tell you that i really miss my senior high school friends especiall when i was at 11 grade.This picture was very memorable because we celebrate our school birthday.That time was the last time we can celebrate the school birthday because when we are in 12 grade we only focussing on examination.When i was in 11 grade,i feel that i never have sad moment or we can say that i always happy :".We just having fun together because we are in second year of senior high school means that we already know all the facility and get more new friends but we dont have many schedule like thrid year of senior high school.I hope that this pandemic end as soon as posible so we can meet each other.Miss you guys XOXO</p>
-    </div>
-  </div>
-</div>
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+               <div class="home__container container grid">
+                   <div class="home__content grid">
+                       <div class="home__social">
+                           <a href="https://www.linkedin.com/in/cempaka-rahma-davi-0b6a42169" target ="_blank" class="home__social-icon">
+                              <i class="uil uil-linkedin-alt"></i>
+                           </a>
+                           <a href="https://www.instagram.com/cempakarahmaa/" target ="_blank" class="home__social-icon">
+                            <i class="uil uil-envelope-alt"></i>
+                           </a>
+                           <a href="https://github.com/cempakarahmaa" target ="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                           </a>
+                       </div>
+                       <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                <image class="home__blob-img" x='-175' y='-60' href="assets/img/Perfil.png"/>
+                            </g>
+                        </svg>
+                       </div>
+                       <div class="home__data">
+                           <h1 class="home__title"> Hello , I'am Cempaka Rahma Davi</h1>
+                           <h3 class="home__subtitle">Frontend Developer</h3>
+                           <p class="home__description"> A second-year student at Sepuluh Nopember Institute of Technology majoring in
+                            Information Systems, who eager to have a chance of learning something new.</p>
+                            <a href="#contact" class="button button--flex">
+                                Contact Me<i class="uil uil-message button__icon"></i>
+                            </a>
+                       </div>
+                   </div>
+                   <div class="home__scroll">
+                       <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name"> Scroll down</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                       </a>
+                   </div>
+               </div>
+            </section>
 
-<div class="jumbotron text-center" style="background-color: #fce9f1; margin-bottom:0">
-  <h3>Thankyou &#128152;</h3>
-</div>
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">My profile</span>
+                <div class="about__container container grid">
+                    <img src="assets/img/About.jpg" alt="" class="about_img">
+                    <div class="about__data">
+                        <p class="about__description">
+                            A second-year student at Sepuluh Nopember Institute of Technology majoring in
+                            Information Systems, who eager to have a chance of learning something new. I always take a responsiblilty for any task that I
+                            undertake. I can adapt easily to several condition and situation. I able to work well both as individual or as a part of a productive
+                            team with a high standard result.As an IT enthusiast, I also have several programming skill.
+                        </p>
+                        <div class="about__info">
+                            <div>
+                                <span class="about__info-title"> 01+</span>
+                                <span class="about__info-name">Years <br>experience</span>
+                            </div>
+                            <div>
+                                <span class="about__info-title"> 05+ </span>
+                                <span class="about__info-name"> Completed <br>event</span>
+                            </div>
+                            <div>
+                                <span class="about__info-title"> 03+</span>
+                                <span class="about__info-name"> Completed <br>project</span>
+                            </div>
+                        </div>
+                        <div class="about__buttons">
+                            <a href="https://drive.google.com/file/d/1NoadOy698lfduubkoOCPQcg2DfW-8GSI/view?usp=drivesdk" class="button button--flex">
+                                Look at My CV<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-</body>
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">My techincal level</span>
+                <div class="skills__container container grid">
+                    <div>
+                          <!--==================== SKILLS 1 ====================-->
+                        <div class="skills__content skills__open">
+                            <div class="skills_header">
+                                <i class="uil uil-brackets-curly skills__icon"></i>
+                                <div>
+                                    <h1 class="skills_title">Frontend Developer</h1>
+                                    <span class="skills__subtitle">Create the interface of a website</span>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            <div class="skills__list grid">
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">HTML</h3>
+                                        <span class="skills_number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skill_percentage skills__html"></span>
+                                    </div>   
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">CSS</h3>
+                                        <span class="skills_number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skill_percentage skills__css"></span>
+                                    </div>   
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Javascript</h3>
+                                        <span class="skills_number">50%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skill_percentage skills__js"></span>
+                                    </div>   
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Laravel Framework</h3>
+                                        <span class="skills_number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skill_percentage skills__lrvl"></span>
+                                    </div>   
+                                </div>
+
+                            </div>
+                        </div>
+                            <!--==================== SKILLS 2 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills_header">
+                                <i class="uil uil-chart-line skills__icon"></i>
+                                <div>
+                                    <h1 class="skills_title">Dashboard Data Visualization</h1>
+                                    <span class="skills__subtitle">Create data visualization to better decision</span>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            <div class="skills__list grid">
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Tableau</h3>
+                                        <span class="skills_number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skill_percentage skills__tableau"></span>
+                                    </div>   
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Power BI</h3>
+                                        <span class="skills_number">75%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skill_percentage skills__powerbi"></span>
+                                    </div>   
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Ms. Excel</h3>
+                                        <span class="skills_number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skill_percentage skills__msexcel"></span>
+                                    </div>   
+                                </div>
+
+                            </div>
+                        </div>
+                                  <!--==================== SKILLS 3 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills_header">
+                                <i class="uil uil-info-circle skills__icon"></i>
+                                <div>
+                                    <h1 class="skills_title">Others tools</h1>
+                                    <span class="skills__subtitle">Technical skills that i learned</span>
+                                </div>
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                            <div class="skills__list grid">
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Adobe Illustrator</h3>
+                                        <span class="skills_number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skill_percentage skills__ai"></span>
+                                    </div>   
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">Process Maker</h3>
+                                        <span class="skills_number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skill_percentage skills__processmaker"></span>
+                                    </div>   
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name">My Sql</h3>
+                                        <span class="skills_number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skill_percentage skills__mysql"></span>
+                                    </div>   
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills_name"> SAP Fiori </h3>
+                                        <span class="skills_number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skill_percentage skills__sap"></span>
+                                    </div>   
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Most recent work</span>
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/Portfolio1.png" alt="" class="portfolion__img">
+                            <div class="portfolio__data">
+                                <h3 class="porfolio__title"> ASEAN Data Science Competition </h3>
+                                <p class="portfolio__description"> Project about Social Development Goals 4 which is Quality Education with the title Goals Education Quality and Its Impacts :
+                                    How Education Quality affects Unemployment Rate among ASEAN. Using Tableau as a tools for data vizualitation.
+                                </p>
+                                <a href=" https://docs.google.com/presentation/d/1qEDr0PBhT2UIqj7x7l0qvRRNgXjDqCWOXnSHixh27Zs/edit?usp=sharing" class="button button--flex button--small porfolio__button">
+                                    View more
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="assets/img/Portfolio2.png" alt="" class="portfolion__img">
+                            <div class="portfolio__data">
+                                <h3 class="porfolio__title"> Hear Me Out ! </h3>
+                                <p class="portfolio__description"> Education Game about mental health in Gemastik National Competition</p>
+                                <a href="https://drive.google.com/file/d/1td25fR6Awm1v4Ghc93VdzwAM_LSG8UqP/view?usp=sharing" class="button button--flex button--small porfolio__button">
+                                    View more
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contact Me</h2>
+                <span class="section__subtitle">Get in touch</span>
+                <div class="contact__container container grid">
+                    <div>
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <span class="contact__subtitle">crahmadavi@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact__information">
+                            <i class="uil uil-map-marker contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Location</h3>
+                                <span class="contact__subtitle">Bekasi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="" class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input type="text" class="contact__input">
+                            </div>
+                            <div class="contact__content">
+                            <label for="" class="contact__label">Email</label>
+                            <input type="email" class="contact__input">
+                            </div>
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Project</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Message</label>
+                            <input type="textarea" class="contact__input">
+                        </div>
+                        <div>
+                           <a href="" class="button button--flex">
+                               Send Message
+                               <i class="uil uil-message button__icon"></i>
+                           </a> 
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title"> Cezkiy</h1>
+                        <span class="footer__subtitle"> Frontend Developer</span>
+                    </div>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#about" class="footer__link">About</a>
+                        </li>
+                        <li>
+                            <a href="#skills" class="footer__link">My skills</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link"> Contact Me</a>
+                        </li>
+                    </ul>
+                    <div class="footer__socials">
+                        <a href="https://www.instagram.com/cempakarahmaa/" class="footer__social">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="footer__copy">&#169; Cezkiy. All right reserved </p>
+            </div>
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
-
